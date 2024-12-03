@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out items */
+    background-color: #8B4513;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+header .logo {
+    width: 100px; /* Set the size of the logo */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and text */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('company-label.jpg'); /* Path to the image */
+    background-size: cover; /* Make the image cover the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: black; /* Ensure text color contrasts with the image */
+    padding: 50px 20px; /* Add some padding to the header */
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #8B4513;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8B4513;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #A0522D;
+}
+
+/* Contact Section */
+.contact-info {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+}
+
+/* Map Section */
+.map iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

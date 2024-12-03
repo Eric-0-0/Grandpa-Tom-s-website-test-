@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grandpa Tom's Heritage Meat Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>Grandpa Tom's Heritage Meat Company</h1>
+        </a>
+        <p>Quality Meats, Naturally Natural, USDA Certified</p>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us. We’d love to hear from you!</p>
+            <div class="contact-info">
+                <p><strong>Location:</strong> Omaha, NE</p>
+                <p><strong>Email:</strong> email.com</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Visit Us</h2>
+            <p>Drop by our location at the heart of Omaha, NE to experience our products firsthand.</p>
+            <div class="map">
+                <!-- Embed a Google Map -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6212889040176!2d-96.20262038469228!3d41.25653697927556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938e3823c3c3c3%3A0x3c3c3c3c3c3c3c3!2sOmaha%2C%20NE!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Grandpa Tom's Heritage Meat Company. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
